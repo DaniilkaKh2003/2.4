@@ -17,7 +17,8 @@ namespace Sample5
                 if (i == K.Length - 1)
                 {
                     Console.Write("введите число: ");
-                    if (int.Parse(Console.ReadLine()) == CHISLO) Console.WriteLine("Вы угадали");
+                    int chislo = int.Parse(Console.ReadLine());
+                    if (chislo == CHISLO) Console.WriteLine("Вы угадали");
                     else Console.WriteLine("Попытки закончились");
                 }
                 else
